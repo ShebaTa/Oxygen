@@ -61,7 +61,6 @@ section {
 
 .caption h1 {
     font-size: 60px;
-    color: white;
     text-align: center;
     margin: 20px 0 30px;
     font-weight: 700;
@@ -74,7 +73,6 @@ h1 span {
 .caption p {
     font-size: 18px;
     margin: 0 0 10px;
-    color: white;
     text-align: center;
 }
 
@@ -261,7 +259,6 @@ h4 {
 }
 
 .info h1 {
-    color: #fff;
     margin-top: 0;
 }
 
@@ -462,7 +459,6 @@ h4 {
 
 #statistic {
     background-image: url(../images/features-bg.jpg);
-    color: white;
     background-attachment: fixed;
 }
 
@@ -538,7 +534,6 @@ h4 {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
 }
 
 .twitter-icon {
@@ -575,19 +570,78 @@ h4 {
     margin: 25px 0;
 }
 
-#themeum h3,
-#themeum .white {
-    color: white;
-}
-
 #themeum a {
     color: #028fcc;
     text-decoration: none;
     cursor: pointer;
 }
 
+#blog .column {
+    width: 33.33333%;
+    text-align: left;
+}
+
+#blog img {
+    width: 100%;
+}
+
+#blog span {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#blog h1 + p,
+#contact h1 + p{
+    width: 62%;
+    margin: 0 auto 90px;
+}
+
+#blog strong {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#blog .date::after {
+    content: "";
+    position: absolute;
+    background-color: #028fcc;
+    /* left: 0;
+    bottom: -22px; */
+    width: 20px;
+    height: 3px;
+}
+
+.blue {
+    color: #028fcc;
+}
+
+#blog .load-more {
+    width: 33.33333%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+#blog input {
+    width: 100%;
+    color: #666;
+    border: 1px solid #f2f2f2;
+    border-radius: 0;
+}
+
+#blog input:hover {
+    color: white;
+}
+
 #contact {
-    height: 864px;
+    background-image: url(../images/contact-bg.jpg);
+    background-attachment: fixed;
+}
+
+.white {
+    color: white;
 }
 
 footer {
