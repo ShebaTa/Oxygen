@@ -170,6 +170,10 @@ p {
     margin: 0 0 90px;
 }
 
+p.smallmargin {
+    margin: 0 0 10px;
+}
+
 .service-container {
     display: flex;
     flex-direction: row;
@@ -469,16 +473,8 @@ h4 {
     margin-bottom: 7px;
 }
 
-#statistic p {
-    margin-bottom: 10px;
-}
-
 #statistic i {
     font-size: 48px;
-}
-
-#price {
-    /* height: 762px; */
 }
 
 #price .column {
@@ -535,6 +531,59 @@ h4 {
     margin: auto;
     border-radius: 0;
     font-weight: 400;
+}
+
+#themeum {
+    background-image: url(../images/twitter-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.twitter-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #028fcc;
+    border-radius: 50%;
+    font-size: 24px;
+    height: 64px;
+    width: 64px;
+    margin: auto;
+}
+
+.twitter-icon i {
+    padding-top: 20px;
+}
+
+.twitter-icon::after {
+    content: "";
+    position: relative;
+    top: 13px;
+    border: 8px solid black;
+    border-top-color: #028fcc;
+    border-bottom-width: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin: auto;
+    height: 0;
+    width: 0;
+}
+
+#themeum h3 {
+    margin: 25px 0;
+}
+
+#themeum h3,
+#themeum .white {
+    color: white;
+}
+
+#themeum a {
+    color: #028fcc;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #contact {
