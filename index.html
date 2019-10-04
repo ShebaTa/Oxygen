@@ -121,7 +121,7 @@
                 </section>
                 <section id="about">
                     <div class="about-container">
-                        <div class="info">
+                        <div class="info white">
                             <h1 class="white">About Us</h1>
                             <p> Lorem ipsum dolor sit amet, consectetur adipisicing 
                                 elit, sed do eiusmod tempor incididunt ut labore et 
@@ -521,8 +521,10 @@
                         </div>
                     </div>
                     <div class="load-more">
-                        <input type="button" value="LOAD MORE">
-                        <i class="fa fa-repeat"></i>
+                        <label for="load-more">
+                            <i class="fa fa-repeat"></i>
+                            <input class="" name="load-more" type="button" value="LOAD MORE">
+                        </label>
                     </div>
                     <div class=""></div>
                 </section>
@@ -533,9 +535,107 @@
                         elit, sed do eiusmod tempor incididunt ut labore et 
                         dolore magna aliqua ut enim ad minim veniam
                     </p>
+                    <div class="row">
+                        <div class="column">
+                            <form action="">
+                                <div class="row form-group"> 
+                                    <input type="text" name="name" placeholder="Name" required>
+                                    <input type="email" name="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="form-group">                               
+                                    <input type="text" name="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" rows="4" placeholder="Enter your message" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="button" value="Send Now">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="column">
+                            <p class="smallmargin">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore 
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                exercitation.
+                            </p>
+                            <ul class="address">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Address: 2400 South Avenue A
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    Phone: +928 336 2000
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    Email:
+                                    <a href="#">support@oxygen.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-globe"></i>
+                                    Website:
+                                    <a href="#">www.sitename.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
             </main>
-            <footer></footer>
+            <footer id="footer">
+                <div class="footer-top">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <div class="social-icons">
+                            <ul>
+                                <li>
+                                    <a  class="envelope" href="#">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="twitter" href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="dribbble" href="#">
+                                        <i class="fa fa-dribbble"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="facebook" href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="linkedin" href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a  class="tumblr" href="#">
+                                        <i class="fa fa-tumblr"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <p class="smallmargin">
+                            © 2014 Oxygen Theme.
+                        </p>
+                        <p class="smallmargin">
+                            Designed by
+                            <a href="#">Themeum</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </body>
     </html>
     <script>
