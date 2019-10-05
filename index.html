@@ -174,28 +174,42 @@
                         dolore magna aliqua ut enim ad minim veniam
                     </p>
                     <div class="gallery">
-                        <div class="gallery-item item-1">
+                        <div class="gallery-item">
                             <img src="./images/portfolio/1.jpg" alt>
+                            <div class="gallery-item-screen">
+                                <h3>Time Hours</h3>
+                                <h4>Design, Photography</h4>
+                                <div style="
+                                display: flex;
+                                width: 130px;
+                                margin: 0 auto;
+                                position: relative;">
+                                    <div style="height: 570px;transition: 0.5s;/* transform: rotate(-115deg); */position: absolute;right: 0;">
+                                        <i class="fa fa-link"></i>
+                                    </div>
+                                    <i class="fa fa-search-plus"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="gallery-item item-2">
+                        <div class="gallery-item">
                             <img src="./images/portfolio/2.jpg" alt>
                         </div>
-                        <div class="gallery-item item-3">
+                        <div class="gallery-item">
                             <img src="./images/portfolio/3.jpg" alt>
                         </div>
-                        <div class="gallery-item item-4">
+                        <div class="gallery-item">
                             <img src="./images/portfolio/4.jpg" alt>
                         </div>
-                        <div class="gallery-item item-5">
+                        <div class="gallery-item">
                             <img src="./images/portfolio/5.jpg" alt>
                         </div>
-                        <div class="gallery-item item-6">
+                        <div class="gallery-item">
                             <img src="./images/portfolio/6.jpg" alt>
                         </div>
-                        <div class="gallery-item item-7">
+                        <div class="gallery-item">
                             <img src="./images/portfolio/7.jpg" alt>
                         </div>
-                        <div class="gallery-item item-8">
+                        <div class="gallery-item">
                             <img src="./images/portfolio/8.jpg" alt>
                         </div>
                     </div>
@@ -473,14 +487,25 @@
                     <div class="row">
                         <div class="column">
                             <div class="image">
-                                <img src="images/blog/1.jpg" alt="">
+                                <a href="#">
+                                    <img src="images/blog/1.jpg" alt="">
+                                </a>
+                                <div class="comments">
+                                    <span>
+                                        <i class="fa fa-comments-o"></i>
+                                        3 comments
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart"></i>
+                                        0 likes
+                                    </span>
+                                </div>
+                                <div class="post-icon">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
                             </div>
                             <h3 class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                            <span class="date">JUNE 26, 2014</span>
-                            <span class="category">
-                                in
-                                <strong>Photography</strong>
-                            </span>
+                            <span class="date">JUNE 26, 2014 in Photography</span>
                             <p class="smallmargin">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                                     sed do eiusmod tempor incididunt ut labore et dolore 
@@ -489,14 +514,25 @@
                         </div>
                         <div class="column">
                             <div class="image">
-                                <img src="images/blog/2.jpg" alt="">
+                                <a href="#">
+                                    <img src="images/blog/2.jpg" alt="">
+                                </a>
+                                <div class="comments">
+                                    <span>
+                                        <i class="fa fa-comments-o"></i>
+                                        3 comments
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart"></i>
+                                        0 likes
+                                    </span>
+                                </div>
+                                <div class="post-icon">
+                                    <i class="fa fa-picture-o"></i>
+                                </div>
                             </div>
                             <h3 class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                            <span class="date">JUNE 26, 2014</span>
-                            <span class="category">
-                                in
-                                <strong>Photography</strong>
-                            </span>
+                            <span class="date">JUNE 26, 2014  in Photography</span>
                             <p class="smallmargin">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                                     sed do eiusmod tempor incididunt ut labore et dolore 
@@ -505,14 +541,25 @@
                         </div>
                         <div class="column">
                             <div class="image">
-                                <img src="images/blog/3.jpg" alt="">
+                                <a href="#">
+                                    <img src="images/blog/3.jpg" alt="">
+                                </a>
+                                <div class="comments">
+                                    <span>
+                                        <i class="fa fa-comments-o"></i>
+                                        3 comments
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart"></i>
+                                        0 likes
+                                    </span>
+                                </div>
+                                <div class="post-icon">
+                                    <i class="fa fa-video-camera"></i>
+                                </div>
                             </div>
                             <h3 class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                            <span class="date">JUNE 26, 2014</span>
-                            <span class="category">
-                                in
-                                <strong>Photography</strong>
-                            </span>
+                            <span class="date">JUNE 26, 2014  in Photography</span>
                             <p class="smallmargin">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                                     sed do eiusmod tempor incididunt ut labore et dolore 
@@ -521,10 +568,10 @@
                         </div>
                     </div>
                     <div class="load-more">
-                        <label for="load-more">
+                        <button class="load-button">
                             <i class="fa fa-repeat"></i>
-                            <input class="" name="load-more" type="button" value="LOAD MORE">
-                        </label>
+                            LOAD MORE
+                        </button>
                     </div>
                     <div class=""></div>
                 </section>
@@ -563,11 +610,13 @@
                             <ul class="address">
                                 <li>
                                     <i class="fa fa-map-marker"></i>
-                                    Address: 2400 South Avenue A
+                                    Address: 
+                                    <a href="#">2400 South Avenue A</a> 
                                 </li>
                                 <li>
                                     <i class="fa fa-phone"></i>
-                                    Phone: +928 336 2000
+                                    Phone: 
+                                    <a href="#">+928 336 2000</a> 
                                 </li>
                                 <li>
                                     <i class="fa fa-envelope"></i>
@@ -639,14 +688,26 @@
         </body>
     </html>
     <script>
-        var slideHeight = $(window).height();
+        $(document).ready(function() {
+            var slideHeight = $(window).height();
 
-        $(window).on('scroll', function(){
-            if( $(window).scrollTop()>slideHeight ){
-                $('#menu').addClass('navbar-fixed-top');
-            } else {
-                $('#menu').removeClass('navbar-fixed-top');
-            }
+            $(window).on('scroll', function(){
+                if( $(window).scrollTop()>slideHeight ){
+                    $('#menu').addClass('navbar-fixed-top');
+                } else {
+                    $('#menu').removeClass('navbar-fixed-top');
+                }
+            });
+
+            $("a.topLink").click(function() {
+                $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top + "px"
+                }, {
+                duration: 500,
+                easing: "swing"
+                });
+                return false;
+            });
         });
     </script>
 </DOCTYPE>
