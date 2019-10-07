@@ -21,8 +21,33 @@ main {
 }
 
 section {
+    overflow: hidden;
     padding: 90px 15%;
     text-align: center;
+}
+
+h1,
+h1 + p,
+.idea-card,
+#contact .form-group,
+#contact p,
+#contact li,
+.footer-top img {
+    animation-duration: 1000ms;
+    animation-delay: 300ms;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+#contact .form-group:last-child,
+#contact li,
+.idea-card {
+    animation-delay: 1s;
 }
 
 #home {
@@ -30,15 +55,56 @@ section {
     padding: 0;
 }
 
-.slider-slides img {
-    width: 100%;
-    float: left;
-    opacity: 0.3;
+.slider-slides {
+    position: relative;
 }
 
 .slider-inner {
     overflow: hidden;
     background-color: black;
+}
+
+.slide-image {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    opacity: 0;
+    display: block;
+}
+
+.slide-image.active {
+    position: relative;
+    opacity: 0.3;
+}
+
+.left-control, .right-control {
+    position: absolute;
+    top: 50%;
+    height: 51px;
+    width: 51px;
+    line-height: 48px;
+    z-index: 20;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    transition: all 0.5s ease 0s;
+}
+
+.left-control:hover, 
+.right-control:hover {
+    background-color: #028fcc;
+    border-color: #028fcc;
+}
+
+.left-control {
+    left: 50px;
+}
+
+.right-control {
+    right: 50px;
 }
 
 .caption {
@@ -55,11 +121,41 @@ section {
     color: #fff;
 }
 
+.caption-item {
+    display: none;
+    transition: 0.5s; 
+}
+
+.caption-item.active {
+    display: block;
+}
+
+.caption-item.active input{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+}
+
 .caption h1 {
+    display: block;
     font-size: 60px;
     text-align: center;
     margin: 20px 0 30px;
     font-weight: 700;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
 }
 
 h1 span {
@@ -67,9 +163,19 @@ h1 span {
 }
 
 .caption p {
+    display: block;
     font-size: 18px;
     margin: 0 0 10px;
     text-align: center;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: fadeInRightBig;
+    animation-name: fadeInRightBig;
 }
 
 input[type="button"] {
@@ -276,10 +382,15 @@ h4 {
     margin-bottom: 25px;
 }
 
-.blue-scale {
+.scale-1 .scale-width {
     width: 95%;
+}
+
+.blue-scale {
     text-align: right;
     background-color: #028fcc;
+    animation-name: stretching;
+    animation-duration: 1s;
 }
 
 .blue-scale span {
@@ -295,15 +406,15 @@ h4 {
     line-height: 1.4;
 }
 
-.scale-2 .blue-scale {
+.scale-2 .scale-width {
     width: 75%;
 }
 
-.scale-3 .blue-scale {
+.scale-3 .scale-width {
     width: 60%;
 }
 
-.scale-4 .blue-scale {
+.scale-4 .scale-width {
     width: 85%;
 }
 
@@ -316,9 +427,8 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 588px;
     width: 100%;
-    background-color: #666;
+    background-color: #fff;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -335,6 +445,16 @@ h4 {
 
 .gallery-item img {
     transition: 0.5s;
+    animation-delay: 400ms;
+    animation-name: fadeInLeftBig;
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
 }
 .gallery-item:hover img {
     transform: rotate(-20deg) scale(1.4);
@@ -572,6 +692,18 @@ h4 {
     color: #028fcc;
 }
 
+#price .column,
+#team .column {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+}
+
 #price h3 {
     margin-bottom: 30px;
 }
@@ -744,6 +876,14 @@ h4 {
     font-weight: 600;
     padding: 15px 15px;
     margin-top: 70px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
 }
 
 #blog .load-button:hover {
@@ -774,10 +914,6 @@ h4 {
     text-align: left;
     justify-content: flex-start;
 }
-
-/* #contact form {
-    width: 100%;
-} */
 
 #contact input,
 #contact textarea {
@@ -901,6 +1037,13 @@ h4 {
     text-decoration: underline;
 }
 
+@keyframes stretching {
+    0% {width: 5%;}
+    100% {width: 100%;}
+}
+
+
+
 
 
    /* -webkit-animation-duration: 2s;
@@ -909,5 +1052,5 @@ h4 {
     animation-fill-mode: both;
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
-    -webkit-animation-name: flipInY;
-    animation-name: flipInY; */
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft; */
