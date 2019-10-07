@@ -36,10 +36,6 @@ section {
     opacity: 0.3;
 }
 
-.slider-slides {
-    /* width: 300%; */
-}
-
 .slider-inner {
     overflow: hidden;
     background-color: black;
@@ -357,6 +353,45 @@ h4 {
     left: 0;
     top: 100%;
     transition: 0.5s;
+    vertical-align: middle;
+}
+
+.gallery-item-screen h3 {
+    margin-top: 0;
+}
+
+.screen-icons {
+    display: flex;
+    width: 130px;
+    margin: 0 auto;
+    position: relative;
+    height: 50px;
+}
+
+.screen-icon-search {
+    height: 570px;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    transform: rotate(-115deg);
+    position: absolute;
+    right: 0;
+}
+
+.gallery-item:hover .screen-icon-search {
+    transform: rotate(0deg);
+}
+
+.screen-icon-link {
+    height: 570px;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    transform: rotate(115deg);
+    position: absolute;
+    left: 0;
+}
+
+.gallery-item:hover .screen-icon-link {
+    transform: rotate(0deg);
 }
 
 .gallery-item-screen i {
@@ -367,6 +402,11 @@ h4 {
     width: 50px;
     line-height: 50px;
     margin: 20px 5px 0;
+}
+
+.gallery-item-screen i:hover {
+    background-color: #028fcc;
+    color: white;
 }
 
 .gallery-item-screen h3 {
@@ -386,10 +426,6 @@ h4 {
 .gallery img{
     width: 100%;
     height: 100%;
-}
-
-#team {
-    height: 838px;
 }
 
 .row {
@@ -812,10 +848,6 @@ h4 {
 .address a:hover {
     cursor: pointer;
     color: #028fcc;
-}
-
-#footer {
-
 }
 
 .footer-top {
